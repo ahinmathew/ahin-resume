@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="oneCSS.css" rel="stylesheet">
+    <title>Resume!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="../images/Favicon.png">
+</head>
+<body>
+<div class="container-fluid" >
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-12 ">
+            <div class="card   border-0"  style="border-radius: 20px; color: white !important;">
+                <div class="card-body">
+                    <div class=" text-center text-black ">
+                        <h4 ><b style="padding-bottom: -2px;" id="A"></b> <b style="padding-bottom: -2px;" id="B"></b></h4>
+                        <h5 ><b style="padding-top: -3px;" id="C"></b></h5>
+                        <span id="D" style="font-size: 14px; "></span>
+                    </div>
+                    <div style="font-size: 14px; ">
+                    <div class="address text-black">
+                        <span ><b>Address</b><br></span>
+                        <span id="E"></span><span>,</span>
+                        <span id="F"></span><br>
+                        <span id="G"></span>
+                    </div>
+                    <div style="margin-top: -8px;">
+                        <span class="objective text-black" ><br><b>Objective:&emsp;<br></b></span>
+                        <span class="objectiveText text-black" id="H"></span><br>
+                    </div>
+                    <hr class="opacity-100 text-black mt-1 mb-2">
+                    <div>
+                        <span class="skills text-black text-end"><b>Skills:&emsp;</b></span>
+                        <div class="row text-black ps-3">
+                            <ul class="col ">
+                                <li class=" order-last" id="I"></li>
+                                <li class=" order-first" id="J"></li>
+                            </ul>
+                            <ul class="col ">
+                                <li class=" order-last" id="K"></li>
+                                <li class=" order-first" id="L"></li>
+                            </ul>
+                            <ul class="col ">
+                                <li class=" order-last" id="M"></li>
+                                <li class=" order-first" id="N"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="opacity-100 text-black mb-2" style="margin-top: -11px;">
+                    <div class="text-black">
+                        <span class="work text-black"><b>Work Experience:&emsp;<br></b></span>
+                        <span class="workText text-black" id="O"></span><span><br></span ><span id="P"></span><br>
+                        <span id="R"></span>&nbsp;
+                        <span id="S"></span>&nbsp;&nbsp;to
+                        <span id="T"></span>&nbsp;
+                        <span id="U"></span><br>
+                        <li id="V"></li>
+                        <li id="W"></li>
+                    </div>
+                    <hr class="opacity-100 text-black mt-1 mb-2">
+                    <div class="row">
+                        <div class="col text-black">
+                            <div>
+                                <span class="educationa text-black"><b>Curricular:<br></b></span>
+                                <span class="educationText1a text-black" id="AG"></span>,&nbsp;<span id="AI"><br></span><br>
+                                <span class="educationText2a text-black" id="AH"></span><br>
+                                <span id="AJ"></span>&nbsp;
+                                <span id="AK"></span>&nbsp;&nbsp;to
+                                <span id="AL"></span>&nbsp;
+                                <span id="AM"></span><br>
+                            </div >
+                            <div style="line-height: 8px;">&nbsp;</div>
+                            <div>
+                                <span class="educationText1a text-black" id="AN"></span>,&nbsp;<span id="AP"><br></span><br>
+                                <span class="educationText2a text-black" id="AO"></span><br>
+                                <span id="AQ"></span>&nbsp;
+                                <span id="AR"></span>&nbsp;&nbsp;to&nbsp;
+                                <span id="AS"></span>&nbsp;
+                                <span id="AT"></span><br>
+                            </div >
+                            </div>
+                            <div class="col text-black">
+                                <span class="extra text-black"><b>Extra-Curricular:<br></b></span>
+                                <li id="AU"></li>
+                                <li Id="AV"></li>
+                            </div>
+                        </div>
+                        <hr class="opacity-100 text-black mt-1 mb-2">
+                        <div>&emsp;&emsp;&emsp;&emsp;
+                            <span class="projectsText text-black " id="AW"></span><span class="text-black"></span><br>
+                            <span class=" text-black "><a target="_blank"><u class="link-primary" id="AX"></u></a></span>
+                            <br>&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <span class="projectsText text-black" id="AY"></span><span class="text-black"></span><br>
+                            <span class=" text-black "><a target="_blank"><u class="link-primary" id="AZ"></u></a></span>
+                            <br>&emsp;&emsp;&emsp;&emsp;&emsp;
+                            <span class="projectsText text-black" id="AAA"></span><span class="text-black"></span><br>
+                            <span class=" text-black" ><a target="_blank"><u class="link-primary" id="AAB"></u></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script>
+    if(sessionStorage.getItem("A") !== null)
+    document.getElementById("A").innerText = String(sessionStorage.getItem("A"));
+    if(sessionStorage.getItem("B") !== null)
+    document.getElementById("B").innerText = String(sessionStorage.getItem("B"));
+    if(sessionStorage.getItem("C") !== null)
+    document.getElementById("C").innerText = String(sessionStorage.getItem("C"));
+    if(sessionStorage.getItem("D") !== null)
+    document.getElementById("D").innerText = String(sessionStorage.getItem("D"));
+    if(sessionStorage.getItem("E") !== null)
+    document.getElementById("E").innerText = String(sessionStorage.getItem("E"));
+    if(sessionStorage.getItem("F") !== null)
+    document.getElementById("F").innerText = String(sessionStorage.getItem("F"));
+    if(sessionStorage.getItem("G") !== null)
+    document.getElementById("G").innerText = String(sessionStorage.getItem("G"));
+    if(sessionStorage.getItem("H") !== null)
+    document.getElementById("H").innerText = String(sessionStorage.getItem("H"));
+    if(sessionStorage.getItem("I") !== null)
+    document.getElementById("I").innerText = String(sessionStorage.getItem("I"));
+    if(sessionStorage.getItem("J") !== null)
+    document.getElementById("J").innerText = String(sessionStorage.getItem("J"));
+    if(sessionStorage.getItem("K") !== null)
+    document.getElementById("K").innerText = String(sessionStorage.getItem("K"));
+    if(sessionStorage.getItem("L") !== null)
+    document.getElementById("L").innerText = String(sessionStorage.getItem("L"));
+    if(sessionStorage.getItem("M") !== null)
+    document.getElementById("M").innerText = String(sessionStorage.getItem("M"));
+    if(sessionStorage.getItem("N") !== null)
+    document.getElementById("N").innerText = String(sessionStorage.getItem("N"));
+    if(sessionStorage.getItem("O") !== null)
+    document.getElementById("O").innerText = String(sessionStorage.getItem("O"));
+    if(sessionStorage.getItem("P") !== null)
+    document.getElementById("P").innerText = String(sessionStorage.getItem("P"));
+    if(sessionStorage.getItem("R") !== null)
+    document.getElementById("R").innerText = String(sessionStorage.getItem("R"));
+    if(sessionStorage.getItem("S") !== null)
+    document.getElementById("S").innerText = String(sessionStorage.getItem("S"));
+    if(String(sessionStorage.getItem("T")) !== "Present"){
+        document.getElementById("T").innerText = String(sessionStorage.getItem("T"));
+    }
+    if(sessionStorage.getItem("U") !== null)
+    document.getElementById("U").innerText = String(sessionStorage.getItem("U"));
+    if(sessionStorage.getItem("V") !== null)
+    document.getElementById("V").innerText = String(sessionStorage.getItem("V"));
+    if(sessionStorage.getItem("W") !== null)
+    document.getElementById("W").innerText = String(sessionStorage.getItem("W"));
+    if(sessionStorage.getItem("AG") !== null)
+    document.getElementById("AG").innerText = String(sessionStorage.getItem("AG"));
+    if(sessionStorage.getItem("AH") !== null)
+    document.getElementById("AH").innerText = String(sessionStorage.getItem("AH"));
+    if(sessionStorage.getItem("AI") !== null)
+    document.getElementById("AI").innerText = String(sessionStorage.getItem("AI"));
+    if(sessionStorage.getItem("AJ") !== null)
+    document.getElementById("AJ").innerText = String(sessionStorage.getItem("AJ"));
+    if(sessionStorage.getItem("AK") !== null)
+    document.getElementById("AK").innerText = String(sessionStorage.getItem("AK"));
+    if(String(sessionStorage.getItem("AL")) !== "Present") {
+        document.getElementById("AL").innerText = String(sessionStorage.getItem("AL"));
+    }
+    if(sessionStorage.getItem("AM") !== null)
+    document.getElementById("AM").innerText = String(sessionStorage.getItem("AM"));
+    if(sessionStorage.getItem("AN") !== null)
+    document.getElementById("AN").innerText = String(sessionStorage.getItem("AN"));
+    if(sessionStorage.getItem("AO") !== null)
+    document.getElementById("AO").innerText = String(sessionStorage.getItem("AO"));
+    if(sessionStorage.getItem("AP") !== null)
+    document.getElementById("AP").innerText = String(sessionStorage.getItem("AP"));
+    if(sessionStorage.getItem("AQ") !== null)
+    document.getElementById("AQ").innerText = String(sessionStorage.getItem("AQ"));
+    if(sessionStorage.getItem("AR") !== null)
+    document.getElementById("AR").innerText = String(sessionStorage.getItem("AR"));
+    if(sessionStorage.getItem("AS") !== null)
+    document.getElementById("AS").innerText = String(sessionStorage.getItem("AS"));
+    if(sessionStorage.getItem("AT") !== null )
+    document.getElementById("AT").innerText = String(sessionStorage.getItem("AT"));
+    if(sessionStorage.getItem("AU") !== null)
+    document.getElementById("AU").innerText = String(sessionStorage.getItem("AU"));
+    if(sessionStorage.getItem("AV") !== null)
+    document.getElementById("AV").innerText = String(sessionStorage.getItem("AV"));
+    if(sessionStorage.getItem("AW") !== null)
+    document.getElementById("AW").innerText = String(sessionStorage.getItem("AW"));
+    if(sessionStorage.getItem("AX") !== null)
+    document.getElementById("AX").innerText = String(sessionStorage.getItem("AX"));
+    if(sessionStorage.getItem("AY") !== null)
+    document.getElementById("AY").innerText = String(sessionStorage.getItem("AY"));
+    if(sessionStorage.getItem("AZ") !== null)
+    document.getElementById("AZ").innerText = String(sessionStorage.getItem("AZ"));
+    if(sessionStorage.getItem("AAA") !== null)
+    document.getElementById("AAA").innerText = String(sessionStorage.getItem("AAA"));
+    if(sessionStorage.getItem("AAB") !== null)
+    document.getElementById("AAB").innerText = String(sessionStorage.getItem("AAB"));
+</script>
+</html>
